@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import GoogleAuth from './GoogleAuth';
 
 // Header component must be into BrowserRouter as Link cann't be used outside a router
 const Header = () => {
@@ -12,6 +13,7 @@ const Header = () => {
                 <Link to="/" className="item">
                     All Streams
                 </Link>
+                <GoogleAuth />
             </div>            
         </div>
     )
