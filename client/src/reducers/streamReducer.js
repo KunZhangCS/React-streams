@@ -17,6 +17,7 @@ export default (state = {}, action) => {
         case EDIT_STREAM:
             return { ...state, [action.payload.id]: action.payload };
         case FETCH_STREAMS:
+            // _.mapKeys changes the array obtained from API to an object
             // ... takes out the objects from mapKeys and adds them to the big return object
             return { ...state, ..._.mapKeys(action.payload, 'id')};
         case DELETE_STREAM:
