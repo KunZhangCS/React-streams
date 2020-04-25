@@ -10,6 +10,12 @@
       "description": "Video games of CS 1.6",
       "userId": "102890863014299346123",
       "id": 2
+    },
+    {
+      "title": "WoW",
+      "description": "Online game",
+      "userId": "102890863014299346123",
+      "id": 3
     }
   ]
 }
