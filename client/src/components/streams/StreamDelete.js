@@ -3,10 +3,12 @@ import Modal from '../Modal';
 
 const StreamDelete = () => {
     const actions = (
-        <div>
+        // Use React.Fragment instead of <div> to avoid style issues with Semantic UI 
+        // Short syntax <> </>    
+        <React.Fragment>
             <button className="ui button negative">Delete</button>
             <button className="ui button">Cancel</button>
-        </div>
+        </React.Fragment>
     )
 
     return (
