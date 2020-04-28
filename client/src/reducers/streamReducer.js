@@ -12,6 +12,8 @@ import {
 // Redux requires return a new object {...state}
 export default (state = {}, action) => {
     switch (action.type) {
+        // For fetch, create and eidt a stream, the rest of state objects are still needed
+        // Thus add them using ...state
         case FETCH_STREAM:        
         case CREATE_STREAM:
         case EDIT_STREAM:
